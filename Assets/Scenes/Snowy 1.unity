@@ -339,9 +339,9 @@ MonoBehaviour:
   HillsStart: 60
   ValleyStart: 20
   WaterLevel: 5
-  BaseX: 456
-  BaseY: 546
-  TerrainGrain: 0.025
+  BaseX: 455
+  BaseY: 545.5
+  TerrainGrain: 0.012
   WoodBaseX: 786
   WoodBaseY: 304
   WoodGrain: 0.02
