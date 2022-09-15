@@ -11,5 +11,10 @@ namespace Assets.Scripts
         public string Name { get; set; }
         public float Z { get; set; }
         public bool IsWooded { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Name},{Z},{(IsWooded ? 1 : 0)}";
+        }
     }
 }

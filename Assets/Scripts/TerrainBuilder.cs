@@ -209,4 +209,13 @@ public class TerrainBuilder : MonoBehaviour
     {
         return $"{x},{y}";
     }
+    private static string BuildSaveString()
+    {
+        string rawData = "";
+        foreach(KeyValuePair<string, BlockData> kvp in _terrainData)
+        {
+            rawData += $"{kvp.Key}#{kvp.Value}";
+        }
+        return rawData;
+    }
 }
