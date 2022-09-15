@@ -214,7 +214,7 @@ public class TerrainBuilder : MonoBehaviour
         string rawData = "";
         foreach(KeyValuePair<string, BlockData> kvp in _terrainData)
         {
-            rawData += $"{kvp.Key}#{kvp.Value}";
+            rawData += $"{kvp.Key}#{kvp.Value};";
         }
         return rawData;
     }
