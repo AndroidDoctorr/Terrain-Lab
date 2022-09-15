@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -330,10 +330,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e124769a03cee448b6c9e28c84d32ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 63
+  RenderLimit: 63
+  BlockSize: 0.1
   BaseHeight: 0
-  StartZ: 0
+  StartZ: -0.2
   ZScale: 1.1
+  MountainStart: 90
+  HillsStart: 60
+  ValleyStart: 20
+  WaterLevel: 5
   BaseX: 456
   BaseY: 546
   TerrainGrain: 0.025
@@ -344,16 +349,14 @@ MonoBehaviour:
   WoodDensity: 0.1
   WoodMaxZ: 7
   TPPlane: {fileID: 5422103401472956384, guid: 88fa7fafead60714b847973b2d321314, type: 3}
-  Mountain1Block: {fileID: 2453053520842475696, guid: 2653573e098f20643a1861384465e309, type: 3}
-  Mountain2Block: {fileID: 2453053520842475696, guid: 88e9646da3ca408419b2242cf1926b61, type: 3}
-  Terrain1Block: {fileID: 6201138017652751519, guid: 0854de3f8cdc974478ac062078a4870e, type: 3}
-  Terrain2Block: {fileID: 6201138017652751519, guid: 9905695df0adc1146a5fe880a606255e, type: 3}
-  Terrain3Block: {fileID: 6201138017652751519, guid: 55e3b73a8478a5e479e594874646df3a, type: 3}
+  Mountain1Block: {fileID: 1557554895705638697, guid: 88c2cf6c5b3366549beb333385245d14, type: 3}
+  Mountain2Block: {fileID: 5733914757745375350, guid: 57c42ff9ca9eea84b9eb184be5fe60c0, type: 3}
+  Terrain1Block: {fileID: 1557554895705638697, guid: 88c2cf6c5b3366549beb333385245d14, type: 3}
+  Terrain2Block: {fileID: 1557554895705638697, guid: 88c2cf6c5b3366549beb333385245d14, type: 3}
+  Terrain3Block: {fileID: 1557554895705638697, guid: 88c2cf6c5b3366549beb333385245d14, type: 3}
   WaterBlock: {fileID: 1557554895705638697, guid: 9700f320c525a9e41bcc95981026d9f0, type: 3}
   Trees:
-  - {fileID: 1903325505640490398, guid: 78d02c9e61f809844a10cda7aa05dee5, type: 3}
-  - {fileID: 1903325505640490398, guid: 8aaa8b0d210e9184fbf8b5630fbee808, type: 3}
-  - {fileID: 736235738301455687, guid: 7cc99ad3f5dde094fa38cccd47a7748f, type: 3}
+  - {fileID: 7563079457818551912, guid: f3f797fe8d09a5d409faa39d2d56812d, type: 3}
 --- !u!4 &1718078429
 Transform:
   m_ObjectHideFlags: 0
